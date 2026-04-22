@@ -1,0 +1,128 @@
+{
+    "subject": "ITE114 - Linear Algebra and Matrices",
+    "school": "MSU-Tawi-Tawi College of Technology and Oceanography",
+    "total_topics": 11,
+    "chapters": [
+        {
+            "chapter_number": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "sections": [
+                "1.1 Introduction to Systems of Linear Equations",
+                "1.2 Gaussian Elimination and Gauss-Jordan Elimination",
+                "1.3 Applications of Systems of Linear Equations"
+            ]
+        },
+        {
+            "chapter_number": 2,
+            "chapter_title": "Matrices",
+            "sections": [
+                "2.1 Matrices",
+                "2.2 Operations with Matrices",
+                "2.3 Properties of Matrix Operations",
+                "2.4 The Inverse of a Matrix",
+                "2.5 Elementary Matrices"
+            ]
+        }
+    ],
+    "topics": [
+        {
+            "id": 1,
+            "chapter": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "title": "Introduction to Linear Algebra",
+            "explanation": "Linear Algebra is the branch of algebra in which one studies vector (linear) spaces, linear operators (linear mappings), and linear, bilinear, and quadratic functions on vector spaces (Encyclopedia of Mathematics, Kluwer Academic Press, 1990). Linear applications include areas in engineering, chemistry, economics, business, ecology, biology, and psychology.",
+            "example": "Real-world problem: Two cities are 5000 km apart.\nA plane flying AGAINST the wind takes 6.25 hours.\nThe SAME plane flying WITH the wind takes only 5 hours.\n\nLet x = speed of the plane, y = speed of the wind:\n  6.25(x - y) = 5000\n  5(x + y)    = 5000\n\nSimplified:\n  x - y = 800\n  x + y = 1000\n\nSolution: x = 900 km/h (plane), y = 100 km/h (wind)",
+            "practice_question": "Can you think of another real-life situation modeled by a system of two linear equations? Describe the two unknowns and write the equations."
+        },
+        {
+            "id": 2,
+            "chapter": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "title": "Linear Equations in n Variables",
+            "explanation": "Definition 1.1.1 - A linear equation in n variables x1, x2, x3, ..., xn has the form:\n  a1x1 + a2x2 + a3x3 + ... + anxn = b\n\nThe coefficients a1, a2, ..., an are real numbers, b is the constant term. a1 is the leading coefficient, and x1 is the leading variable.\n\nIMPORTANT RULES:\n- No products or roots of variables (e.g., xy or √x)\n- No variables in trig, exponential, or logarithmic functions\n- Variables appear ONLY to the first power",
+            "example": "LINEAR equations:\n  (a) 3x + 2y = 7\n  (b) x1 - 2x2 + 10x3 + x4 = 0\n  (c) (1/2)x + y - πz = √2\n  (d) (sin π/2)x1 - 4x2 = e²\n\nNOT LINEAR equations:\n  (a) xy + z = 2         → product of two variables\n  (b) sin(x1) + 2x2 = 0  → variable inside sin()\n  (c) eˣ - 2y = 4        → variable as an exponent\n  (d) 1/x + 1/y = 4      → variable in denominator",
+            "practice_question": "Activity 1A - Determine whether each equation is LINEAR or NOT LINEAR in x and y:\n1. 2x - y² = 4\n2. (sin π)x + y = 2\n3. 2/x + 4y = 3\n4. (1/2)x - (1/4)y = 0\n5. 2xy - 6y = 0\n6. e^(-2x) + 5y = 8\n7. 4/y - x = 10\n8. (3/5)x + (7/10)y = 2"
+        },
+        {
+            "id": 3,
+            "chapter": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "title": "Solutions and Parametric Representation",
+            "explanation": "Definition 1.1.2 - A solution of a linear equation in n variables is a sequence of n real numbers s1, s2, ..., sn that satisfies the equation when substituted.\n\nThe set of ALL solutions is called the SOLUTION SET. When the solution set is found, the equation is said to have been SOLVED.\n\nTo represent all solutions, we use PARAMETRIC REPRESENTATION by introducing a free variable (parameter), usually called 't' or 's'. A variable is FREE if it can take any real value. Choose variables that occur LAST in the equation to be free.",
+            "example": "Example 2: Solve x1 + 2x2 = 4\n\nStep 1: Solve for x1 in terms of x2:\n  x1 = 4 - 2x2\n\nStep 2: x2 is FREE. Let x2 = t.\n\nParametric solution:\n  x1 = 4 - 2t,  x2 = t  (t is any real number)\n\nTwo particular solutions:\n  t = 1  →  x1 = 2,  x2 = 1\n  t = 4  →  x1 = -4, x2 = 4\n\nExample 3: Solve 3x + 2y - z = 3\n  Let y = s, z = t (both free):\n  x = 1 - (2/3)s + (1/3)t,  y = s,  z = t\n  Two particular solutions: (1,0,0) and (1,1,2)",
+            "practice_question": "Activity 1B - Find the parametric representation of the solution set and give TWO particular solutions:\n1. 2x - 3y = 4\n2. x + y + z = 1"
+        },
+        {
+            "id": 4,
+            "chapter": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "title": "Systems of Linear Equations",
+            "explanation": "Definition 1.1.3 - A system of m linear equations in n variables is a set of m equations, each linear in the same n variables.\n\nDefinition 1.1.4 - A SOLUTION of the system is a sequence s1, s2, ..., sn that satisfies EACH equation in the system.\n\nNumber of Solutions — exactly ONE of these is true:\n1. Exactly ONE solution (consistent system)\n2. INFINITELY MANY solutions (consistent system)\n3. NO solution (inconsistent system)\n\nA system is CONSISTENT if it has at least one solution.\nA system is INCONSISTENT if it has no solution.",
+            "example": "Geometrically for 2 equations in 2 variables:\n\n(a) Two INTERSECTING lines → ONE solution\n    x + y = 3  and  x - y = -1\n    Lines cross at one point.\n\n(b) Two COINCIDENT lines → INFINITE solutions\n    x + y = 3  and  2x + 2y = 6\n    Same line — every point is a solution.\n\n(c) Two PARALLEL lines → NO solution\n    x + y = 3  and  x + y = 1\n    Lines never meet — contradiction!",
+            "practice_question": "Without solving, predict how many solutions each system has:\n1. x + y = 5  and  2x + 2y = 10\n2. x + y = 5  and  2x + 2y = 7\n3. x + y = 5  and  x - y = 1"
+        },
+        {
+            "id": 5,
+            "chapter": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "title": "Row-Echelon Form and Back-Substitution",
+            "explanation": "Definition 1.1.5 - A system is in ROW-ECHELON FORM when it follows a stair-step pattern with leading coefficients of 1.\n\nDefinition 1.1.6 - Two systems are EQUIVALENT if they have the same solution set.\n\nBACK-SUBSTITUTION: Start from the LAST equation (gives one value directly), then substitute upward through each equation.\n\nThree operations that produce EQUIVALENT systems:\n1. Interchange two equations\n2. Multiply an equation by a nonzero constant\n3. Add a multiple of one equation to another equation",
+            "example": "System in row-echelon form — solve by back-substitution:\n\n  x - 2y + 3z = 9   ...(Eq.1)\n      y + 3z = 5   ...(Eq.2)\n           z = 2   ...(Eq.3)\n\nStep 1: From Eq.3: z = 2\nStep 2: Sub z=2 into Eq.2: y + 6 = 5  →  y = -1\nStep 3: Sub y=-1, z=2 into Eq.1:\n  x - 2(-1) + 3(2) = 9\n  x + 2 + 6 = 9  →  x = 1\n\nSolution: x = 1, y = -1, z = 2\n\nVerification:\n  Eq.1: (1) - 2(-1) + 3(2) = 1+2+6 = 9 ✓\n  Eq.2: (-1) + 3(2) = -1+6 = 5 ✓\n  Eq.3: z = 2 ✓",
+            "practice_question": "Activity 2 - Use back-substitution to solve:\n1. x1 - x2 = 2  and  x2 = 3\n2. 2x1 - 4x2 = 6  and  3x2 = 9\n3. -x + y - z = 0,  2y + z = 3,  (1/2)z = 0\n4. x - y = 4,  2x + z = 6,  3z = 6\n5. 5x1 + 2x2 + x3 = 0  and  2x1 + x2 = 0"
+        },
+        {
+            "id": 6,
+            "chapter": 1,
+            "chapter_title": "Systems of Linear Equations",
+            "title": "Gaussian Elimination",
+            "explanation": "GAUSSIAN ELIMINATION is the process of rewriting a system into row-echelon form through a chain of equivalent systems, named after German mathematician Carl Friedrich Gauss (1777-1855).\n\nStrategy: Work from the UPPER LEFT corner. Keep x in upper left position and eliminate all other x values from the first column, then move to the second column, and so on.\n\nIf elimination produces '0 = (nonzero number)' → INCONSISTENT (no solution)\nIf elimination produces '0 = 0' → INFINITE solutions (free variable exists)",
+            "example": "Solve: x - 2y + 3z = 9\n      -x + 3y      = -4\n      2x - 5y + 5z = 17\n\nStep 1: Add Eq.1 to Eq.2 → new Eq.2: y + 3z = 5\nStep 2: Add -2×Eq.1 to Eq.3 → new Eq.3: -y - z = -1\nStep 3: Add Eq.2 to Eq.3 → new Eq.3: 2z = 4\nStep 4: Multiply Eq.3 by 1/2 → z = 2\nBack-substitute → z=2, y=-1, x=1 ✓\n\nINCONSISTENT example:\n  x1 - 3x2 + x3 = 1\n  2x1 - x2 - 2x3 = 2\n  x1 + 2x2 - 3x3 = -1\nAfter elimination → 0 = -2 (FALSE) → No solution!\n\nINFINITE SOLUTIONS example:\n  x2 - x3 = 0\n  x1 - 3x3 = -1\n  -x1 + 3x2 = 1\nAfter elimination → 0 = 0 → Let x3 = t:\n  x1 = 3t-1, x2 = t, x3 = t",
+            "practice_question": "Activity 3 - Solve using Gaussian Elimination:\n1. x1 - x2 = 0  and  3x1 - 2x2 = -1\n2. 3x + 2y = 2  and  6x + 4y = 14\n3. 2u + v = 120  and  u + 2v = 120\n4. x + y + z = 6,  2x - y + z = 3,  3x - z = 0\n5. 3x1 - 2x2 + 4x3 = 1,  x1 + x2 - 2x3 = 3,  2x1 - 3x2 + 6x3 = 8"
+        },
+        {
+            "id": 7,
+            "chapter": 2,
+            "chapter_title": "Matrices",
+            "title": "2.1 Introduction to Matrices",
+            "explanation": "Definition 2.1 - An m × n MATRIX A is the rectangular array of mn real or complex numbers arranged in m horizontal ROWS and n vertical COLUMNS.\n\nThe number in the ith row and jth column is called the (i,j)-entry, written aij.\n\nSpecial matrix types:\n- SQUARE matrix: m = n (same number of rows and columns)\n- ROW matrix: a matrix with only 1 row (1 × n)\n- COLUMN matrix: a matrix with only 1 column (m × 1)\n- ZERO matrix: all entries are zero, written O\n- Two matrices are EQUAL if they have the same size AND all corresponding entries are equal",
+            "example": "A 2×3 matrix (2 rows, 3 columns):\n     [1   2   3]\nA =  [4   5   6]\n\nEntry a12 = 2 (row 1, column 2)\nEntry a23 = 6 (row 2, column 3)\n\nA 3×3 SQUARE matrix:\n     [1  0  0]\nI =  [0  1  0]\n     [0  0  1]\n(This is called the Identity Matrix)\n\nA 1×4 ROW matrix: A = [3  -1  0  5]\n\nA 3×1 COLUMN matrix:\n     [2]\nB =  [7]\n     [-3]",
+            "practice_question": "Given matrix A = [[3,1,-2],[0,5,4],[1,-3,2]]:\n1. What are the dimensions of matrix A?\n2. What is the entry a13?\n3. What is the entry a32?\n4. Is A a square matrix? Why?"
+        },
+        {
+            "id": 8,
+            "chapter": 2,
+            "chapter_title": "Matrices",
+            "title": "2.2 Operations with Matrices",
+            "explanation": "SCALAR MULTIPLICATION: Multiply every entry of matrix A by scalar c.\n  (cA)ij = c × aij\n\nMATRIX ADDITION: Add corresponding entries. Matrices must be SAME SIZE.\n  (A + B)ij = aij + bij\n\nMATRIX SUBTRACTION: Subtract corresponding entries.\n  (A - B)ij = aij - bij\n\nMATRIX MULTIPLICATION: A is m×n, B is n×p → AB is m×p.\nThe number of COLUMNS in A must equal the number of ROWS in B.\n  (AB)ij = sum of (aik × bkj) for k = 1 to n\n\nTRANSPOSE: The transpose of A (written Aᵀ) is obtained by switching rows and columns.\n  (Aᵀ)ij = aji",
+            "example": "Addition example:\n  [1  2]   [5  6]   [6   8]\n  [3  4] + [7  8] = [10  12]\n\nScalar multiplication (2 × A):\n  2 × [1  2] = [2   4]\n      [3  4]   [6   8]\n\nMatrix multiplication:\n  A = [1  2]   B = [5  6]\n      [3  4]       [7  8]\n\n  AB = [(1×5+2×7)  (1×6+2×8)]  =  [19  22]\n       [(3×5+4×7)  (3×6+4×8)]     [43  50]\n\nTranspose example:\n  A = [1  2  3]   Aᵀ = [1  4]\n      [4  5  6]        [2  5]\n                       [3  6]",
+            "practice_question": "Given A = [[1,2],[3,4]] and B = [[5,6],[7,8]]:\n1. Find A + B\n2. Find A - B\n3. Find 3A\n4. Find AB\n5. Find Aᵀ\n6. Is AB = BA? (Is matrix multiplication commutative?)"
+        },
+        {
+            "id": 9,
+            "chapter": 2,
+            "chapter_title": "Matrices",
+            "title": "2.3 Properties of Matrix Operations",
+            "explanation": "For matrices A, B, C of appropriate sizes and scalars c, d:\n\nADDITION PROPERTIES:\n1. A + B = B + A  (Commutative)\n2. (A + B) + C = A + (B + C)  (Associative)\n3. A + O = A  (Additive identity, O is zero matrix)\n4. A + (-A) = O  (Additive inverse)\n\nMULTIPLICATION PROPERTIES:\n5. A(BC) = (AB)C  (Associative)\n6. A(B + C) = AB + AC  (Distributive left)\n7. (A + B)C = AC + BC  (Distributive right)\n8. c(AB) = (cA)B = A(cB)\n9. AI = IA = A  (Identity matrix I)\n\nWARNING: AB ≠ BA in general! Matrix multiplication is NOT commutative.",
+            "example": "Showing AB ≠ BA:\n\n  A = [1  2]   B = [0  1]\n      [0  1]       [1  0]\n\n  AB = [1×0+2×1  1×1+2×0] = [2  1]\n       [0×0+1×1  0×1+1×0]   [1  0]\n\n  BA = [0×1+1×0  0×2+1×1] = [0  1]\n       [1×1+0×0  1×2+0×1]   [1  2]\n\n  AB ≠ BA ✓ (confirmed — NOT commutative)\n\nTranspose properties:\n  (Aᵀ)ᵀ = A\n  (A + B)ᵀ = Aᵀ + Bᵀ\n  (AB)ᵀ = BᵀAᵀ  (order reverses!)",
+            "practice_question": "Let A = [[2,1],[0,3]] and B = [[1,4],[2,0]]:\n1. Verify that (AB)ᵀ = BᵀAᵀ\n2. Show that AB ≠ BA\n3. Find (A + B)ᵀ and verify it equals Aᵀ + Bᵀ"
+        },
+        {
+            "id": 10,
+            "chapter": 2,
+            "chapter_title": "Matrices",
+            "title": "2.4 The Inverse of a Matrix",
+            "explanation": "An n×n matrix A is INVERTIBLE (or nonsingular) if there exists a matrix B such that:\n  AB = BA = I  (where I is the n×n identity matrix)\n\nB is called the INVERSE of A, written A⁻¹.\nIf no such B exists, A is called SINGULAR (not invertible).\n\nFor a 2×2 matrix A = [[a,b],[c,d]]:\n  det(A) = ad - bc\n  If det(A) ≠ 0:  A⁻¹ = (1/det(A)) × [[d,-b],[-c,a]]\n  If det(A) = 0:  A is SINGULAR (no inverse)\n\nKEY FACT: A system AX = B has a UNIQUE solution X = A⁻¹B if A is invertible.",
+            "example": "Find the inverse of A = [[2,1],[5,3]]:\n\nStep 1: Find det(A) = (2×3) - (1×5) = 6 - 5 = 1\n\nStep 2: Since det(A) = 1 ≠ 0, A is invertible.\n\nStep 3: A⁻¹ = (1/1) × [[3,-1],[-5,2]] = [[3,-1],[-5,2]]\n\nVerification:\n  AA⁻¹ = [2×3+1×(-5)   2×(-1)+1×2]  =  [1  0] = I ✓\n          [5×3+3×(-5)   5×(-1)+3×2]     [0  1]\n\nSINGULAR matrix example:\n  B = [[1,2],[2,4]]  →  det(B) = 4 - 4 = 0 → NO inverse!",
+            "practice_question": "1. Find the inverse of A = [[4,1],[3,1]] if it exists.\n2. Find the inverse of B = [[2,4],[1,2]] if it exists.\n3. Use the inverse to solve the system:\n     2x + y = 5\n     5x + 3y = 13"
+        },
+        {
+            "id": 11,
+            "chapter": 2,
+            "chapter_title": "Matrices",
+            "title": "2.5 Elementary Matrices",
+            "explanation": "An ELEMENTARY MATRIX is a matrix obtained from the identity matrix I by performing exactly ONE elementary row operation.\n\nThe three types of elementary matrices correspond to the three row operations:\nType 1 - INTERCHANGE: Swap two rows\nType 2 - SCALING: Multiply a row by a nonzero constant\nType 3 - REPLACEMENT: Add a multiple of one row to another\n\nKEY THEOREM: Every elementary matrix is INVERTIBLE.\nThe inverse of an elementary matrix is also an elementary matrix.\n\nIMPORTANT: A matrix A is invertible if and only if it can be written as a product of elementary matrices.",
+            "example": "Starting from I = [[1,0,0],[0,1,0],[0,0,1]]:\n\nType 1 - Swap Row 1 and Row 2:\n  E1 = [[0,1,0],[1,0,0],[0,0,1]]\n\nType 2 - Multiply Row 2 by 3:\n  E2 = [[1,0,0],[0,3,0],[0,0,1]]\n\nType 3 - Add 2×Row1 to Row 3:\n  E3 = [[1,0,0],[0,1,0],[2,0,1]]\n\nUsing E to perform row operations on A:\n  Multiplying EA is the same as performing\n  that row operation directly on A!",
+            "practice_question": "1. Write the elementary matrix E that represents:\n   a) Swapping Row 1 and Row 3 of a 3×3 matrix\n   b) Multiplying Row 2 by -4\n   c) Adding 3×Row2 to Row1\n\n2. Find the inverse of E2 = [[1,0,0],[0,3,0],[0,0,1]]\n\n3. Express A = [[1,2],[3,4]] as a product of elementary matrices."
+        }
+    ]
+}
